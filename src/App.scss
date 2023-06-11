@@ -233,6 +233,31 @@ $hover-color: #9a91ea;
       margin-top: 100px;
       padding: 20px;
     }
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 500px;
+      border-radius: -20px 1px;
+    }
+    .expl {
+      width: 200px !important;
+    }
+
+    .footer-item {
+      margin-bottom: 10px;
+    }
+
+    .footer-contents {
+      margin: 0px;
+      p {
+        display: none;
+      }
+      img {
+        width: 90px !important;
+        margin-left: -10px !important;
+      }
+    }
 
     .cropped-image {
       display: none;
@@ -317,21 +342,31 @@ $hover-color: #9a91ea;
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
+    padding: 2px 130px;
     border-radius: 90px 90px 490px;
+
+    .expl {
+      width: 400px;
+      margin-left: 50px;
+      margin-top: 40px;
+      margin-right: 50px;
+    }
   }
 
   .footer-content {
     text-align: center;
-
-    margin-left: 60px;
+  }
+  .footer-contents {
     p {
       font-size: 13px;
       margin-top: 20px;
+      margin-left: 50px;
     }
     a {
       img {
         width: 70px;
+        margin-left: 90px;
       }
     }
   }

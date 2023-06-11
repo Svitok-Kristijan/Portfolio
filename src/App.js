@@ -49,12 +49,17 @@ function App() {
         <Monster />
       </div>
       <footer class="footer">
+        <p className="expl">
+          This portfolio is designed to be mobile responsive. Other pages are
+          not, but for the optimal experience, please view them on a larger
+          screen resolution.
+        </p>
         <div class="footer-content">
           <h3>My Information</h3>
           <p>Email: svile007@gmail.com</p>
           <p>Phone: 015112387624</p>
         </div>
-        <div class="footer-content">
+        <div class="footer-contents">
           <p>Follow me on social media</p>
           <a href="https://www.facebook.com/kristijankyko.svitok">
             <img src={Facebook} />
