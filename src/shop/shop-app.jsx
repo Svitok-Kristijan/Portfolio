@@ -4,7 +4,7 @@ import "./shop.scss";
 
 const Shop = () => {
   return (
-    <div className="projects-holder2">
+    <div className="projects-holderShop">
       <p>
         The shopping website I created during my learning process with the help
         of paid courses incorporates all the functionality of a typical shopping

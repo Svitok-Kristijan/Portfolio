@@ -3,6 +3,9 @@ import forky from "./forkyfy.png";
 import "./App.scss";
 import Shop from "./shop/shop-app";
 import Football from "./football/football";
+import Bank from "./bank/bank";
+import Monster from "./monster/monster";
+import Facebook from "./facebook.png";
 
 function App() {
   return (
@@ -12,15 +15,16 @@ function App() {
         <h3>About me</h3>
         <img src={Kristijan} className="photo" alt="logo" />
         <p>
-          My name is Kristijan Svitok. <br></br> I am living and working in
-          Germany.<br></br>I am Croatian by nationality.<br></br> I am 26 years
-          old.<br></br>I am a self-taught front-end developer.
-          <br></br>My passion is coding and I have been learning for a year now.
-          <br></br>In my learning, I have knowledge of HTML, CSS/SASS,
-          JavaScript/React, Git/GitHub.<br></br>I possess knowledge of English
-          language in speaking and writing, as well as proficiency in German
-          language in speaking and somewhat weaker in writing. Additionally, I
-          am fluent in Croatian language.
+          My name is Kristijan Svitok. <br></br> I live and work in Germany.
+          <br></br>I am of Croatian nationality and I am 26 years old.
+          <br></br>I am a self-taught front-end developer.
+          <br></br> Coding is my passion, and I have been learning for a year
+          now.
+          <br></br>In my learning journey, I have acquired knowledge of HTML,
+          CSS/SASS, JavaScript/React, Git/GitHub. <br></br>I am proficient in
+          both spoken and written English and I have good speaking skills in
+          German, although my writing skills in German are somewhat weaker.
+          Additionally, I am fluent in the Croatian language.
         </p>
       </div>
       <div className="projects">
@@ -36,14 +40,27 @@ function App() {
           >
             GitHub
           </a>
-          <a className="live-forky" href="#">
-            Live site
-          </a>
+
           <img className="forky" src={forky} alt="forkyfy photo" />
         </div>
         <Shop />
         <Football />
+        <Bank />
+        <Monster />
       </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <h3>My Information</h3>
+          <p>Email: svile007@gmail.com</p>
+          <p>Phone: 015112387624</p>
+        </div>
+        <div class="footer-content">
+          <p>Follow me on social media</p>
+          <a href="https://www.facebook.com/kristijankyko.svitok">
+            <img src={Facebook} />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

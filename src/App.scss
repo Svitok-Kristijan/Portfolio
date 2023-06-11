@@ -312,4 +312,27 @@ $hover-color: #9a91ea;
       }
     }
   }
+  .footer {
+    background-color: #847785;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 90px 90px 490px;
+  }
+
+  .footer-content {
+    text-align: center;
+
+    margin-left: 60px;
+    p {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    a {
+      img {
+        width: 70px;
+      }
+    }
+  }
 }
