@@ -6,6 +6,7 @@ import Football from "./football/football";
 import Bank from "./bank/bank";
 import Monster from "./monster/monster";
 import Facebook from "./facebook.png";
+import Todo from "./todo/todo";
 
 function App() {
   return (
@@ -46,13 +47,14 @@ function App() {
         <Shop />
         <Football />
         <Bank />
+        <Todo />
         <Monster />
       </div>
       <footer class="footer">
         <p className="expl">
-          This portfolio is designed to be mobile responsive. Other pages are
-          not, but for the optimal experience, please view them on a larger
-          screen resolution.
+          This portfolio is designed to be mobile responsive.<br></br> Other
+          pages are not, but for the optimal experience,<br></br> please view
+          them on a larger screen resolution.
         </p>
         <div class="footer-content">
           <h3>My Information</h3>
