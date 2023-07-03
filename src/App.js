@@ -55,7 +55,9 @@ function App() {
         </p>
       </div>
       <div className="projects">
-        <h2>Some of my projects and exercises</h2>
+        <h2 className="projects-title animate">
+          Some of my projects and exercises
+        </h2>
         <div className="projects-holder animate ">
           <p>
             This is one of the first exercises I did, copying the Forkyfy

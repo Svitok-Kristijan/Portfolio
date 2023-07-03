@@ -127,7 +127,7 @@ $hover-color: #9a91ea;
     flex-wrap: wrap;
     align-content: center;
 
-    h2 {
+    .projects-title {
       border-top: 2px solid $secondary-color;
       text-shadow: 5px 5px 2px #5048a93c;
       width: 800px;
@@ -141,6 +141,14 @@ $hover-color: #9a91ea;
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transform: translateY(-200px);
+      transition: all 1s ease;
+
+      &.in-view {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
 
     .projects-holder {
