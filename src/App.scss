@@ -301,20 +301,20 @@ $hover-color: #9a91ea;
       margin-top: 200px;
       margin-left: 0px;
       width: 410px;
-      height: 400px;
+      height: 750px;
       display: inline-block;
       background-color: #9a91ea;
 
       h3 {
-        font-size: 24px;
-        top: 20px;
-        left: 30px;
+        font-size: 30px;
+        top: 50px;
+        left: 40px;
       }
 
       .photo {
-        width: 90px;
-        height: 90px;
-        margin-top: 30px;
+        width: 130px;
+        height: 130px;
+        margin-top: 330px;
         box-shadow: 5px 5px white;
         &:hover {
           transform: scale(1.2);
@@ -322,21 +322,23 @@ $hover-color: #9a91ea;
       }
 
       p {
-        font-size: 12px;
-        bottom: 130px;
+        font-size: 20px;
+        bottom: 190px;
         left: 30px;
         width: 80%;
-        letter-spacing: 0px;
-        line-height: 13px;
+        letter-spacing: 1px;
+        line-height: 19px;
+        margin-left: -20px;
       }
     }
 
     .projects {
       margin-top: 80px;
 
-      h2 {
+      .projects-title {
         font-size: 22px;
         width: 100%;
+        margin-left: -30px;
       }
 
       .projects-holder {
@@ -344,6 +346,7 @@ $hover-color: #9a91ea;
         height: 200px;
         margin-top: 40px;
         margin-bottom: 80px;
+        margin-left: -50px;
         border-radius: 10px;
         &:hover {
           height: 260px;

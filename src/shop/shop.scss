@@ -14,7 +14,6 @@
   border-top-left-radius: 3%;
   transform: translateX(800px);
   transition: opacity 1.2s ease, transform 1s ease;
-  
 
   &.in-view {
     opacity: 1;
@@ -132,6 +131,7 @@
       margin-top: 40px;
       margin-bottom: 80px;
       border-radius: 10px;
+      margin-left: -50px;
       &:hover {
         height: 260px;
         p {
