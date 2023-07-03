@@ -3,7 +3,9 @@ $secondary-color: #0b0123c4;
 $tertiary-color: #281f48;
 $accent-color: #887ef7;
 $hover-color: #9a91ea;
-
+body {
+  overflow-x: hidden;
+}
 .App {
   margin-top: -200px;
   background-color: rgba(189, 230, 238, 0.276);
@@ -254,10 +256,14 @@ $hover-color: #9a91ea;
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 676px) {
     .App {
       margin-top: 100px;
       padding: 20px;
+      overflow-x: hidden;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
     }
     .footer {
       flex-direction: column;
