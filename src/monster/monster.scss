@@ -8,10 +8,17 @@
   margin-bottom: 200px;
   border-radius: 10px 300px 100px;
   transition: all 0.8s;
-
+  opacity: 0;
   overflow: hidden;
   border-top: 10px solid rgba(184, 90, 184, 0.976);
   border-top-left-radius: 3%;
+  transform: translateX(800px);
+  transition: opacity 1.2s ease, transform 1s ease;
+
+  &.in-view {
+    opacity: 1;
+    transform: translateX(0px);
+  }
   &:hover {
     background-color: #887ef7;
     transform: scale(1.05);

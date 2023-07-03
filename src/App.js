@@ -1,3 +1,4 @@
+import React, {useEffect} from "react";
 import Kristijan from "./ja2.jpg";
 import forky from "./forkyfy.png";
 import "./App.scss";
@@ -9,10 +10,35 @@ import Facebook from "./facebook.png";
 import Todo from "./todo/todo";
 
 function App() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".animate");
+
+      elements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight - 100) {
+          element.classList.add("in-view");
+        } else {
+          element.classList.remove("in-view");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <h1 className="cropped-image">Welcome</h1>
-      <div className="aboutMe">
+      <div className="aboutMe animate">
         <h3>About me</h3>
         <img src={Kristijan} className="photo" alt="logo" />
         <p>
@@ -30,7 +56,7 @@ function App() {
       </div>
       <div className="projects">
         <h2>Some of my projects and exercises</h2>
-        <div className="projects-holder">
+        <div className="projects-holder animate ">
           <p>
             This is one of the first exercises I did, copying the Forkyfy
             webpage.
@@ -50,7 +76,7 @@ function App() {
         <Todo />
         <Monster />
       </div>
-      <footer class="footer">
+      <footer class="footer animate">
         <p className="expl">
           This portfolio is designed to be mobile responsive.<br></br> Other
           pages are not, but for the optimal experience,<br></br> please view
