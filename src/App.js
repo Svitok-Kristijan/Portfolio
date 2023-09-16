@@ -19,7 +19,11 @@ function App() {
         const elementPosition = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (elementPosition < windowHeight - 100) {
+        // Define a different threshold for mobile devices
+        const mobileThreshold =
+          window.innerWidth < 750 ? windowHeight - 50 : windowHeight - 100;
+
+        if (elementPosition < mobileThreshold) {
           element.classList.add("in-view");
         } else {
           element.classList.remove("in-view");
