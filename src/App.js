@@ -102,6 +102,12 @@ function App() {
           <div>
             <span class="dot"></span>
           </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
         </div>
         <h2 className="projects-title animate">
           Some of my projects and exercises
