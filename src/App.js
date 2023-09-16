@@ -8,6 +8,7 @@ import Bank from "./bank/bank";
 import Monster from "./monster/monster";
 import Facebook from "./facebook.png";
 import Todo from "./todo/todo";
+import Car from "./car/car";
 
 function App() {
   useEffect(() => {
@@ -55,6 +56,53 @@ function App() {
         </p>
       </div>
       <div className="projects">
+        <div class="wrapper">
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+          <div>
+            <span class="dot"></span>
+          </div>
+        </div>
         <h2 className="projects-title animate">
           Some of my projects and exercises
         </h2>
@@ -72,6 +120,7 @@ function App() {
 
           <img className="forky" src={forky} alt="forkyfy photo" />
         </div>
+        <Car />
         <Shop />
         <Football />
         <Bank />
