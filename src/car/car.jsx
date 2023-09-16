@@ -31,13 +31,10 @@ const Car = () => {
   return (
     <div className="projects-holderFootball animate">
       <p>This is my first exercises with Mobx and CRUD functionalities.</p>
-      <a className="git-car" href="https://github.com/svile7/Football">
+      <a className="git-car" href="https://github.com/Svitok-Kristijan/mono">
         GitHub
       </a>
-      <a
-        className="live-car"
-        href="https://main--fastidious-bavarois-cc635a.netlify.app/"
-      >
+      <a className="live-car" href="https://dreamy-dodol-451876.netlify.app">
         Live site
       </a>
       <img className="car" src={CarPhoto} alt="car photo" />
