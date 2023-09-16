@@ -381,18 +381,20 @@ div .dot {
   @media screen and (max-width: 750px) {
     * {
       margin: 0;
+      overflow-y: hidden !important;
+      overflow-x: hidden !important;
     }
     .wrapper {
-      width: 100%;
-      height: 250%;
+      width: 99%;
+      height: 260%;
     }
     .App {
       margin-top: 100px;
       padding: 20px;
       overflow-x: hidden !important;
       overflow: hidden !important;
-      width: 100% !important;
-      height: 100vh !important;
+      width: 70% !important;
+      height: 90vh !important;
     }
     .footer {
       flex-direction: column;

@@ -21,7 +21,7 @@ function App() {
 
         // Define a different threshold for mobile devices
         const mobileThreshold =
-          window.innerWidth < 750 ? windowHeight - 50 : windowHeight - 100;
+          window.innerHeight < 150 ? windowHeight - 50 : windowHeight - 100;
 
         if (elementPosition < mobileThreshold) {
           element.classList.add("in-view");
