@@ -9,6 +9,7 @@ import Monster from "./monster/monster";
 import Facebook from "./facebook.png";
 import Todo from "./todo/todo";
 import Car from "./car/car";
+import Blog from "./blog/blog";
 
 function App() {
   useEffect(() => {
@@ -136,6 +137,7 @@ function App() {
         <Bank />
         <Todo />
         <Monster />
+        <Blog />
       </div>
       <footer class="footer animate">
         <p className="expl">
