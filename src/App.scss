@@ -8,7 +8,7 @@ body {
 }
 .wrapper {
   margin-top: 290px;
-  height: 410% !important;
+  height: 185vw !important;
   width: 100%;
   background: linear-gradient(180deg, #e6fdfd, 15%, #119dff, 50%, #030423);
   position: absolute;
@@ -135,6 +135,7 @@ div .dot {
   justify-items: center;
   align-items: center;
   display: grid;
+  z-index: -99;
 
   :root {
     --image-size: 1000px;
@@ -521,6 +522,7 @@ div .dot {
     padding: 2px 100px;
     border-radius: 90px 90px 490px;
     width: 100%;
+    z-index: 0;
     overflow: hidden;
     opacity: 0;
     transform: scale(0.7);
