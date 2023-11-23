@@ -229,15 +229,14 @@ div .dot {
       width: 50%;
       font-weight: bolder;
       text-align: center;
-      color: linear;
-      background: -webkit-linear-gradient($secondary-color, $tertiary-color);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: rgb(0, 0, 0);
+      letter-spacing: 1px;
       transition: all 1s;
+      text-decoration: underline;
+      text-underline-offset: 5px;
 
       &:hover {
-        text-shadow: 4px 4px 50px #ddd1f90c;
-        transform: scale(1.01);
+        transform: scale(1.03);
       }
     }
   }
@@ -442,7 +441,6 @@ div .dot {
       width: 410px;
       height: 750px;
       display: inline-block;
-      background-color: #9a91ea;
 
       h3 {
         font-size: 30px;
@@ -463,11 +461,18 @@ div .dot {
       p {
         font-size: 20px;
         bottom: 190px;
-        left: 30px;
+        left: 60px;
         width: 80%;
         letter-spacing: 1px;
-        line-height: 19px;
+        line-height: 20px;
         margin-left: -20px;
+        background: -webkit-linear-gradient(
+          rgba(51, 0, 255, 0.706),
+          rgb(179, 0, 255)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
       }
     }
 
