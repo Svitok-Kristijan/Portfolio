@@ -1,4 +1,4 @@
-$primary-color: #5048a9;
+$primary-color: #06013c;
 $secondary-color: #0b0123c4;
 $tertiary-color: #281f48;
 $accent-color: #887ef7;
@@ -236,7 +236,7 @@ div .dot {
       transition: all 1s;
 
       &:hover {
-        text-shadow: 14px 14px 20px #43268d;
+        text-shadow: 4px 4px 50px #ddd1f90c;
         transform: scale(1.01);
       }
     }
